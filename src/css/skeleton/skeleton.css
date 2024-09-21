@@ -1,0 +1,158 @@
+.skeleton {
+  background: #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #e0e0e0;
+  }
+  50% {
+    background-color: #f0f0f0;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}
+
+.skeleton-container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Profile Skeleton */
+.profile-skeleton {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+.profile-image-skeleton {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-info-skeleton {
+  flex: 1;
+}
+
+.profile-info-skeleton .name {
+  width: 200px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.profile-info-skeleton .role {
+  width: 150px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-info-skeleton .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.profile-info-skeleton .button {
+  width: 100px;
+  height: 35px;
+  border-radius: 8px;
+}
+
+/* About Skeleton */
+.about-skeleton {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.about-skeleton .title {
+  width: 120px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.about-skeleton .text {
+  height: 15px;
+  margin-bottom: 10px;
+}
+
+/* Skills Skeleton */
+.skills-skeleton {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.skills-skeleton .skill-item {
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+/* Education Skeleton */
+.education-skeleton {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.education-skeleton .edu-item {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* Projects Skeleton */
+.projects-skeleton {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.projects-skeleton .project-card {
+  width: 30%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+/* Contact Skeleton */
+.contact-skeleton {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.contact-skeleton .input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects-skeleton {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .projects-skeleton .project-card {
+    width: 100%;
+  }
+}
